@@ -1,0 +1,35 @@
+# CODEOWNERS file for data-proxy-383
+# Global owners - will be requested for all PRs
+* @Armor-test/grp-integration @Armor-test/squad-api @Armor-test/unit-test
+
+# Directory ownership
+/config/ @Armor-test/team-core @Armor-test/unit-governance
+/extensions/ @Armor-test/team-notifications @Armor-test/squad-performance @Armor-test/squad-ux
+/migrations/ @Armor-test/unit-cloud @Armor-test/dept-billing
+/common/ @Armor-test/squad-tooling @Armor-test/squad-payments @Armor-test/dept-identity
+/pkg/ @Armor-test/dept-logging @Armor-test/dept-data
+/helpers/ @Armor-test/squad-api @Armor-test/grp-payments
+/web/ @Armor-test/grp-payments @Armor-test/dept-automation @Armor-test/squad-api
+/scripts/ @Armor-test/dept-reporting @Armor-test/squad-cloud @Armor-test/team-governance
+/middleware/ @Armor-test/dept-data @Armor-test/grp-api
+/pages/ @Armor-test/team-logging @Armor-test/squad-performance @Armor-test/grp-payments
+/api/ @Armor-test/dept-identity @Armor-test/squad-search
+/shared/ @Armor-test/dept-release @Armor-test/squad-apps
+/internal/ @Armor-test/unit-test @Armor-test/squad-reporting @Armor-test/squad-search
+
+# File type ownership
+*.proto @Armor-test/dept-test @Armor-test/unit-cloud
+*.php @Armor-test/team-frontend @Armor-test/dept-security
+*.scss @Armor-test/unit-test @Armor-test/unit-devops @Armor-test/squad-apps
+*.sql @Armor-test/squad-frontend @Armor-test/squad-apps
+*.yml @Armor-test/dept-release @Armor-test/unit-governance
+*.py @Armor-test/dept-api @Armor-test/unit-design @Armor-test/squad-database
+*.html @Armor-test/dept-automation @Armor-test/unit-cloud
+*.rs @Armor-test/team-security @Armor-test/squad-research @Armor-test/dept-identity
+*.swift @Armor-test/squad-reporting @Armor-test/team-governance
+*.tf @Armor-test/squad-search @Armor-test/squad-mobile
+
+# Security and special files
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/security/ @Armor-test/security @Armor-test/compliance
